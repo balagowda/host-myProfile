@@ -1,0 +1,251 @@
+* {
+  color: white;
+}
+
+.body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(25deg, #0d1137, #077b8a);
+  background: -webkit-linear-gradient(to left, #b8bbf2, #1fbfb8);
+  display: flex;
+  align-items: center;
+}
+
+.animation-box {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.animation-child {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation-left {
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  height: 80%;
+  width: 80%;
+  box-shadow: 0 0 2px #fff;
+}
+
+.animation-middle {
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  height: 80%;
+  width: 80%;
+  box-shadow: 0 0 2px #fff;
+}
+
+.animation-right {
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  height: 80%;
+  width: 80%;
+  box-shadow: 0 0 2px #fff;
+}
+
+.img {
+  position: relative;
+  width: 100%;
+  height: 65%;
+  border-bottom: 1px solid red;
+  border-radius: 0 0 30px 30px;
+  background: inherit;
+}
+
+.img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 30px 30px;
+  border-bottom: 1px solid red;
+  opacity: 0.6;
+}
+
+.content {
+  background-color: aliceblue;
+  position: relative;
+  width: 100%;
+  height: 35%;
+  background: inherit;
+}
+
+.content h2 {
+  text-align: center;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.content h3 {
+  padding: 2px;
+  margin-left: 5px;
+  color: black;
+}
+
+.content p {
+  padding: 5px;
+  margin: 3px;
+  font-size: 20px;
+  color: #1fbfb8;
+}
+
+@media screen and (max-width: 600px) {
+  .body {
+    height: 150vh;
+  }
+
+  .animation-box {
+    width: 100%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .animation-child {
+    height: 90%;
+    width: 100%;
+  }
+
+  .animation-left,
+  .animation-middle,
+  .animation-right {
+    width: 80%;
+    height: 90%;
+  }
+
+  .content h2 {
+    font-size: 25px;
+    padding: 3px;
+  }
+
+  .content h3 {
+    color: black;
+  }
+
+  .content p {
+    color: #1fbfb8;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .body {
+    height: 150vh;
+  }
+
+  .animation-box {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .animation-child {
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .animation-left,
+  .animation-middle,
+  .animation-right {
+    width: 80%;
+    height: 90%;
+  }
+
+  /*    .content h2{
+        font-size: 25px;
+        padding: 3px;
+    } */
+
+  .content h3 {
+    color: black;
+  }
+
+  .content p {
+    color: #1fbfb8;
+  }
+}
+
+/* @media (min-width: 992px) and (max-width: 1200px) {
+  .content h2 {
+    font-size: 22px;
+  }
+
+  .content h3 {
+    color: black;
+    font-size: 20px;
+  }
+
+  .content p {
+    color: #1fbfb8;
+    font-size: 16px;
+  }
+
+  .animation-box {
+    width: 100%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .animation-child {
+    height: 80%;
+    width: 100%;
+    background-color: #b8bbf2;
+    position: relative;
+  }
+
+  .animation-left,
+  .animation-middle,
+  .animation-right {
+    width: 80%;
+    height: 90%;
+  }
+
+} */
+
+@media screen and (max-width: 380px) {
+  .content h2 {
+    font-size: 20px;
+  }
+
+  .content h3 {
+    color: black;
+    font-size: 17px;
+  }
+
+  .content p {
+    color: #1fbfb8;
+    font-size: 14px;
+  }
+
+  #small {
+    padding: 2px;
+  }
+}

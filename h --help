@@ -1,0 +1,34 @@
+[33mcommit aec2c21927db8d49da9e8a0892b5a581fdba60f4[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: balachandregowda <balagowda9483@gmail.com>
+Date:   Fri Mar 3 06:55:10 2023 +0530
+
+    edu img set
+
+[1mdiff --git a/src/app/education/education.component.html b/src/app/education/education.component.html[m
+[1mindex d400490..b0509a0 100644[m
+[1m--- a/src/app/education/education.component.html[m
+[1m+++ b/src/app/education/education.component.html[m
+[36m@@ -10,12 +10,12 @@[m
+                         <p>Heggadadevana Kote</p>[m
+                     </div>[m
+                 </div>[m
+[31m-                <img [src]="School" class="log" alt="">[m
+[32m+[m[32m                <img [src]="School" class="log" alt="school">[m
+             </div>[m
+         </div>[m
+         <div class="animation-child2">[m
+             <div class="middle"  data-aos="flip-right" data-aos-duration="1500">[m
+[31m-                <img [src]="Collage" class="log" alt="">[m
+[32m+[m[32m                <img [src]="Collage" class="log" alt="collage">[m
+                 <div class="detail">[m
+                     <h2>Pre-University:</h2>[m
+                     <div class="details">[m
+[36m@@ -34,7 +34,7 @@[m
+                         <p>Yalahanka, Bengaluru</p>[m
+                     </div>[m
+                 </div>               [m
+[31m-                <img [src]="Graduate" class="log" alt="">[m
+[32m+[m[32m                <img [src]="Graduate" class="log" alt="graduation">[m
+             </div>[m
+         </div>[m
+     </div>[m
