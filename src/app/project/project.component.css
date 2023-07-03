@@ -2,71 +2,48 @@
   color: white;
 }
 
-.body {
+.body-proj {
   width: 100%;
-  height: 100vh;
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
   background: linear-gradient(25deg, #0d1137, #077b8a);
   background: -webkit-linear-gradient(to left, #b8bbf2, #1fbfb8);
-  display: flex;
-  align-items: center;
 }
 
 .animation-box {
-  width: 100%;
-  height: 80%;
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .animation-child {
   width: 80%;
   height: 100%;
+  flex-basis: calc(33.33% - 20px);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.animation-left {
-  border-radius: 20px;
-  position: relative;
-  z-index: 1;
-  background: inherit;
-  overflow: hidden;
-  height: 80%;
-  width: 80%;
-  box-shadow: 0 0 2px #fff;
-}
-
-.animation-middle {
-  border-radius: 20px;
-  position: relative;
-  z-index: 1;
-  background: inherit;
-  overflow: hidden;
-  height: 80%;
-  width: 80%;
-  box-shadow: 0 0 2px #fff;
 }
 
 .animation-right {
   border-radius: 20px;
   position: relative;
   z-index: 1;
-  background: inherit;
   overflow: hidden;
-  height: 80%;
-  width: 80%;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
   box-shadow: 0 0 2px #fff;
+  background: linear-gradient(35deg, #0d1137, #077b8a);
 }
 
 .img {
   position: relative;
   width: 100%;
   height: 65%;
-  border-bottom: 1px solid red;
   border-radius: 0 0 30px 30px;
-  background: inherit;
 }
 
 .img img {
@@ -74,28 +51,19 @@
   width: 100%;
   height: 100%;
   border-radius: 0 0 30px 30px;
-  border-bottom: 1px solid red;
   opacity: 0.6;
 }
 
 .content {
-  background-color: aliceblue;
   position: relative;
   width: 100%;
   height: 35%;
-  background: inherit;
 }
 
 .content h2 {
   text-align: center;
   font-size: 30px;
   padding: 5px;
-}
-
-.content h3 {
-  padding: 2px;
-  margin-left: 5px;
-  color: black;
 }
 
 .content p {
@@ -106,8 +74,10 @@
 }
 
 @media screen and (max-width: 600px) {
-  .body {
-    height: 150vh;
+
+  .body-proj{
+    height: auto;
+    box-sizing: border-box;
   }
 
   .animation-box {
@@ -115,9 +85,7 @@
     height: 98%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+    gap: 20px;
   }
 
   .animation-child {
@@ -125,20 +93,19 @@
     width: 100%;
   }
 
-  .animation-left,
-  .animation-middle,
+  .animation-child a{
+    cursor: pointer;
+  }
+
   .animation-right {
-    width: 80%;
-    height: 90%;
+    width: 300px;
+    height: 270px;
+    margin: 0 auto;
   }
 
   .content h2 {
     font-size: 25px;
     padding: 3px;
-  }
-
-  .content h3 {
-    color: black;
   }
 
   .content p {
@@ -147,19 +114,13 @@
   }
 }
 
-@media (min-width: 600px) and (max-width: 1200px) {
-  .body {
-    height: 150vh;
-  }
+a{
+  text-decoration: none;
+}
 
-  .animation-box {
-    width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+@media (min-width: 600px) and (max-width: 1200px) {
+  .body-proj {
+    height: auto;
   }
 
   .animation-child {
@@ -168,24 +129,27 @@
     overflow: hidden;
   }
 
-  .animation-left,
-  .animation-middle,
-  .animation-right {
-    width: 80%;
-    height: 90%;
+  .animation-box {
+    width: 100%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
-  /*    .content h2{
-        font-size: 25px;
-        padding: 3px;
-    } */
+  .animation-right {
+    width: 530px;
+    height: 480px;
+    margin: 0 auto;
+  }
 
-  .content h3 {
-    color: black;
+  .content h2{
+    font-size: 2.5rem;
   }
 
   .content p {
     color: #1fbfb8;
+    font-size: 30px;
   }
 }
 
@@ -232,20 +196,18 @@
 
 @media screen and (max-width: 380px) {
   .content h2 {
-    font-size: 20px;
+    font-size: 15px;
   }
 
-  .content h3 {
-    color: black;
-    font-size: 17px;
+  .animation-right {
+    width: 230px;
+    height: 180px;
+    margin: 0 auto;
   }
 
   .content p {
     color: #1fbfb8;
-    font-size: 14px;
+    font-size: 12px;
   }
 
-  #small {
-    padding: 2px;
-  }
 }
