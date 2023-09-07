@@ -19,5 +19,8 @@ export class ProjectComponent implements OnInit {
   Todo="assets/images/todo.png";
   Student="assets/images/student.jpg";
   Amezon="assets/images/Amazon.jpg";
+  Map="assets/images/map.png";
+  Chat="assets/images/chat.jpg";
+  Call="assets/images/calling.png";
 
 }
